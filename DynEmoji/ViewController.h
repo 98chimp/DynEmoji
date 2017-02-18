@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FaceView.h"
+#import "FaceViewDataSource.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <FaceViewDataSource>
 
+@property (nonatomic) int happiness;
 
 @end
 

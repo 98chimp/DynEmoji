@@ -15,6 +15,7 @@
 		EB463FD61E565AD000E949F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB463FD41E565AD000E949F1 /* LaunchScreen.storyboard */; };
 		EB463FE11E565AD000E949F1 /* DynEmojiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB463FE01E565AD000E949F1 /* DynEmojiTests.m */; };
 		EB463FEC1E565AD000E949F1 /* DynEmojiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB463FEB1E565AD000E949F1 /* DynEmojiUITests.m */; };
+		EB463FFB1E56692600E949F1 /* FaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB463FFA1E56692600E949F1 /* FaceView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		EB463FE71E565AD000E949F1 /* DynEmojiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynEmojiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB463FEB1E565AD000E949F1 /* DynEmojiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynEmojiUITests.m; sourceTree = "<group>"; };
 		EB463FED1E565AD000E949F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB463FF91E56692600E949F1 /* FaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceView.h; sourceTree = "<group>"; };
+		EB463FFA1E56692600E949F1 /* FaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceView.m; sourceTree = "<group>"; };
+		EB463FFC1E56F94D00E949F1 /* FaceViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceViewDataSource.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +105,12 @@
 		EB463FC51E565AD000E949F1 /* DynEmoji */ = {
 			isa = PBXGroup;
 			children = (
-				EB463FC91E565AD000E949F1 /* AppDelegate.h */,
-				EB463FCA1E565AD000E949F1 /* AppDelegate.m */,
 				EB463FCC1E565AD000E949F1 /* ViewController.h */,
 				EB463FCD1E565AD000E949F1 /* ViewController.m */,
+				EB463FF91E56692600E949F1 /* FaceView.h */,
+				EB463FFA1E56692600E949F1 /* FaceView.m */,
+				EB463FFC1E56F94D00E949F1 /* FaceViewDataSource.h */,
 				EB463FCF1E565AD000E949F1 /* Main.storyboard */,
-				EB463FD21E565AD000E949F1 /* Assets.xcassets */,
-				EB463FD41E565AD000E949F1 /* LaunchScreen.storyboard */,
-				EB463FD71E565AD000E949F1 /* Info.plist */,
 				EB463FC61E565AD000E949F1 /* Supporting Files */,
 			);
 			path = DynEmoji;
@@ -117,6 +119,11 @@
 		EB463FC61E565AD000E949F1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EB463FD21E565AD000E949F1 /* Assets.xcassets */,
+				EB463FD41E565AD000E949F1 /* LaunchScreen.storyboard */,
+				EB463FD71E565AD000E949F1 /* Info.plist */,
+				EB463FC91E565AD000E949F1 /* AppDelegate.h */,
+				EB463FCA1E565AD000E949F1 /* AppDelegate.m */,
 				EB463FC71E565AD000E949F1 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -279,6 +286,7 @@
 				EB463FCE1E565AD000E949F1 /* ViewController.m in Sources */,
 				EB463FCB1E565AD000E949F1 /* AppDelegate.m in Sources */,
 				EB463FC81E565AD000E949F1 /* main.m in Sources */,
+				EB463FFB1E56692600E949F1 /* FaceView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +435,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6X85PLZ26L;
 				INFOPLIST_FILE = DynEmoji/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.98chimp.DynEmoji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,6 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6X85PLZ26L;
 				INFOPLIST_FILE = DynEmoji/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.98chimp.DynEmoji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
